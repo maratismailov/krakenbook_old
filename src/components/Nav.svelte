@@ -4,14 +4,14 @@
 
 <style>
   .first_item {
-	/* margin-left: 50px; */
-	padding-left: 50px
+    /* margin-left: 50px; */
+    padding-left: 50px;
   }
   .second_item {
-	  padding-left: 80px
+    padding-left: 80px;
   }
   .third_item {
-	padding-left: 80px
+    padding-left: 80px;
   }
   nav {
     border-bottom: 1px solid rgba(255, 62, 0, 0.1);
@@ -19,11 +19,15 @@
     padding: 0 1em;
     bottom: 0;
     position: fixed;
+    background-color: #1e1e1e;
+	width: 100%;
+    opacity: 1;
   }
 
   ul {
     margin: 0;
     padding: 0;
+    opacity: 1;
   }
 
   /* clearfix */

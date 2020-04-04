@@ -6,7 +6,7 @@
 
 <style>
   main {
-    position: relative;
+    /* position: relative; */
     max-width: 56em;
     /* background-color: #1e1e1e;
     color: #9cdcfe; */
@@ -20,6 +20,8 @@
     color: #00BC8C;
   }
 </style>
+
+<!-- <Search /> -->
 
 <Nav {segment} />
 

@@ -134,6 +134,13 @@
   }
 </script>
 
+<style>
+  .search {
+    padding-bottom: 80px;
+  }
+
+</style>
+
 <svelte:head>
   <title>kraken book</title>
 </svelte:head>
@@ -151,7 +158,9 @@
     </div>
   </div>
 </div>
-
+<div class="search">
 {#each results as result}
   <div>{result}</div>
 {/each}
+</div>
+
