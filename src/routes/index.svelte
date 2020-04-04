@@ -1,6 +1,8 @@
 <script>
   import axios from "axios";
   import { parse } from "node-html-parser";
+  import { Button, Input } from "sveltestrap";
+  import "bootswatch/dist/darkly/bootstrap.min.css";
 
   let querie = null;
   let page_number = 0;
@@ -132,56 +134,24 @@
   }
 </script>
 
-<style>
-  h1,
-  figure,
-  p {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  h1 {
-    font-size: 2.8em;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 0 0.5em 0;
-  }
-
-  figure {
-    margin: 0 0 1em 0;
-  }
-
-  img {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 0 1em 0;
-  }
-
-  p {
-    margin: 1em auto;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      font-size: 4em;
-    }
-  }
-</style>
-
 <svelte:head>
   <title>kraken book</title>
 </svelte:head>
 <svelte:window on:keydown={handleEnter} />
 
-<input
-  placeholder="Enter book name"
-  type="text"
-  bind:value={querie}
-  on:submit|preventDefault={handleNewSearch} />
-<button on:click={handleNewSearch}>Search</button>
-<!-- <button on:click={testbutton}>Search</button> -->
+<div class="form-row">
+  <div class="col-md-6">
+    <div class="md-form form-group">
+      <Input type="search" placeholder="Enter book name" bind:value={querie} />
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="md-form form-group">
+      <Button color="primary" on:click={handleNewSearch}>Search</Button>
+    </div>
+  </div>
+</div>
 
-<!-- <p>{result}</p> -->
 {#each results as result}
   <div>{result}</div>
 {/each}

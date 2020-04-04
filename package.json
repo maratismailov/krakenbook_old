@@ -13,10 +13,12 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
+    "bootswatch": "^4.4.1",
     "compression": "^1.7.1",
     "node-html-parser": "^1.2.14",
     "polka": "next",
-    "sirv": "^0.4.0"
+    "sirv": "^0.4.0",
+    "sveltestrap": "^3.3.3"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
